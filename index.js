@@ -10,7 +10,9 @@ const port = process.env.PORT || 3030;
 var fileServer = new(nodeStatic.Server)();
 var app = http.createServer(function(req, res) {
   fileServer.serve(req, res);
-}).listen(port);
+}).listen(port, () => {
+    console.log(`running signaling server on ${port}`);
+});
 
 var io = socketIO.listen(app);
 io.sockets.on('connection', function(socket) {
@@ -67,3 +69,4 @@ io.sockets.on('connection', function(socket) {
   });
 
 });
+
