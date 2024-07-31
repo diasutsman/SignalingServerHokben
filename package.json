@@ -1,13 +1,14 @@
 {
-  "name": "webrtc-codelab",
-  "version": "0.0.1",
-  "description": "WebRTC codelab",
-  "dependencies": {
-    "node-static": "^0.7.10",
-    "socket.io": "^2.0.4",
-    "websocket": "^1.0.35"
-  },
-  "scripts": {
-    "start": "node index.js"
-  }
+    "name": "signaling-server-hokben",
+    "version": "0.0.1",
+    "description": "Hokben Signaling Server",
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "serve": "^14.2.3",
+        "socket.io": "^2.0.4",
+        "websocket": "^1.0.35"
+    },
+    "scripts": {
+        "start": "node index.js"
+    }
 }
