@@ -5,8 +5,8 @@
     "dependencies": {
         "dotenv": "^16.4.5",
         "serve": "^14.2.3",
-        "socket.io": "^2.0.4",
-        "websocket": "^1.0.35"
+        "signaling-server-hokben": "file:",
+        "socket.io": "^2.0.4"
     },
     "scripts": {
         "start": "node index.js"
